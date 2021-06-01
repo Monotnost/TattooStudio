@@ -1,0 +1,111 @@
+body {
+  background-color: #000000;
+  font-family: 'Federo', sans-serif;
+}
+nav {
+  background-color: #000000;
+}
+.nav-link {
+  color: #00664D;
+  font-family: 'Federo', sans-serif;
+  font-size: 20px;
+}
+header {
+  background-image: url("Resources/skull.jpg");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 50% 30.5%;
+  background-blend-mode: darken;
+}
+#brand {
+  color: #eab401;
+  font-family: 'Six Caps', sans-serif;
+}
+.dropdown-menu {
+  background-color: #000000;
+}
+
+#jumbText {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+}
+
+#jumbText h1 {
+  color: #EAB401;
+  font-family: 'Six Caps', sans-serif;
+}
+.carousel {
+  margin: 0 auto;
+}
+.carousel-inner img {
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.card {
+  background-color: black;
+}
+
+.card img {
+  max-width: 250px;
+  height: auto;
+}
+
+#mainrow {
+  border-bottom: 1px solid grey;
+}
+
+.hand {
+  opacity: 0.65;
+}
+
+
+footer {
+  background-image: url("Resources/skull.jpg");
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-blend-mode: darken;
+}
+
+footer li a, p, address {
+  color: #dddddd;
+}
+
+footer li a:hover {
+  color: #bbbbbb;
+}
+
+#apptModal .modal-content {
+  background-color: black;
+  font-family: 'Federo', sans-serif;
+  color: #00664d;
+}
+#submitBtn {
+  background-color: #00664d;
+}
+
+input, textarea, label {
+  padding: 5px;
+}
+
+.section {
+  padding-bottom: 10px;
+}
+
+.breadcrumb {
+  background-color: #000000;
+}
+
+.breadcrumb a {
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}

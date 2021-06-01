@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Federo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Six+Caps&display=swap');
+
+
+body {
+    background-color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #00664D
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark
+.navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    color: #EAB401;
+}
+
+.navbar-dark .navbar-text a {
+    color: #00664d;
+}
+
+#apptModal .modal-content {
+    background-color: black;
+    font-family: 'Federo', sans-serif;
+    color: #00664d;
+}
+#submitBtn {
+    background-color: #00664d;
+}
+
+input, textarea, label {
+    padding: 5px;
+}
+
+.section {
+    padding-bottom: 10px;
+}

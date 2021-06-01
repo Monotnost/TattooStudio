@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- Mind's Eye Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="nate.css">
+
+    <title>Mind's Eye Tattoo Studio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <!--adds a dark color navbar that will go
+                vertical on small screens, has the color of the primary set in the project's Bootstrap, and fixes the nav bar
+                to the top of the page -->
+        <div class="container">
+            <!--setting the navbar in container class will keep it same length as the page content. Not setting it here
+                will make sure the navbar is always full page width-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+                <!--This span and the button above add the collapsable menu button option-->
+            </button>
+
+            <!--navbar-brand allows this link to be a brand name
+                        and normally alerts users to use as a home page button.-->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <!--Links actual navbar to collapseable menu button defined above-->
+                <ul class="navbar-nav mr-auto">
+                    <!--mr-auto margin right auto will push the content to the left as much as possible-->
+                    <li class="nav-item active"><a class="nav-link" href="#"><span
+                                class="fa fa-home fa-lg"></span>Home</a>
+                        <!--nav-item
+                            will list all the list items horizontally-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span
+                                class="fa fa-info fa-lg"></span>About</a>
+                        <!--fa classes
+                            add font icons to nav item names-->
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span>Contact</a>
+                </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#apptModal">
+                        <span class="fa fa-sign-in"></span> Book an Appointment
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="apptModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Book an Appointment</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <!--Creates button that will dismiss modal when clicked-->
+                        &times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="formcard">
+                            <div class="form__name">
+                                <h4>Scheduling Form</h4>
+                            </div>
+                            <div class="time__container">
+
+                                <form action="" class="form__time">
+                                    <div class="date">
+                                        <label for="date">Date</label> <input id="date" type="date">
+                                    </div>
+                                    <div class="time">
+                                        <label for="time">Time</label> <input id="time" type="time">
+                                    </div>
+                                    <div class="artist">
+                                        <label>Artist</label> <select name="artist">
+
+                                            <option value="Johnny">
+                                                Johnny
+                                            </option>
+                                            <option value="Kelly">
+                                                Kelly
+                                            </option>
+                                            <option value="Lydia">
+                                                Lydia
+                                            </option>
+                                            <option value="Mikey">
+                                                Mikey
+                                            </option>
+                                            <option value="Troy">
+                                                Troy
+                                            </option>
+
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="message__container">
+                                <div class="section">
+                                    <span>What will it be? </span>
+                                </div>
+                                <textarea
+                                    placeholder="Please include location desired, approximate size, and description."
+                                    cols="50" rows="5"></textarea>
+                            </div>
+                            <div class="contact__container">
+                                <div class="section">
+                                    <span>Contact Information</span>
+                                </div>
+                                <form action="" class="form__contact">
+                                    <div class="cname">
+                                        <label for="cname">Name</label> <input placeholder="e.g. Frankie Flowers"
+                                            id="cname" type="text">
+                                    </div>
+                                    <div class="cphone">
+                                        <label for="cphone">Phone Number</label> <input id="cphone" type="phone" placeholder="e.g. 253-867-5309">
+                                    </div>
+                                    <div class="email">
+                                        <label for="cemail">Email</label> <input placeholder="e.g. frankie@email.com"
+                                            id="cemail" type="email">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form__confirmation">
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" id="submitBtn" class="btn btn-primary btn-sm ml-1">Book now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
