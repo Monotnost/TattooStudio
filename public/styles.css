@@ -84,10 +84,15 @@ footer li a:hover {
 #apptModal .modal-content {
   background-color: black;
   font-family: 'Federo', sans-serif;
-  color: #00664d;
+  color: #EAB401;
 }
 #submitBtn {
-  background-color: #00664d;
+  background-color: #EAB401;
+  border: hidden;
+}
+
+#submitBtn:hover{
+  box-shadow: 0 0 5px #fff;
 }
 
 input, textarea, label {
@@ -108,4 +113,17 @@ input, textarea, label {
 
 li {
   list-style: none;
+}
+
+.close{
+  color: #EAB401;
+}
+
+.close:hover{
+  color: #EAB401;
+  text-shadow: 0 0 5px white;
+}
+
+textarea{
+  resize: none;
 }

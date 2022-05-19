@@ -126,6 +126,7 @@
                         cols="50"
                         rows="5"
                         name="msg"
+                        required
                       ></textarea>
                     </div>
                     <div class="section">
@@ -138,15 +139,19 @@
                         id="cname"
                         type="text"
                         name="name"
+                        maxlength="50"
+                        required
                       />
                     </div>
                     <div class="cphone">
                       <label for="cphone">Phone Number</label>
                       <input
                         id="cphone"
-                        type="phone"
+                        type="tel"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        required
                         name="phone"
-                        placeholder="e.g. 8 800 555-35-35"
+                        placeholder="e.g. 333-22-333"
                       />
                     </div>
                     <div class="form__confirmation">
@@ -405,7 +410,7 @@
 
         <div class="row justify-content-center">
           <div class="col-auto">
-            <p class="text-secondary">© 2021 Some Tattoo Studio</p>
+            <p class="text-secondary">© 2022 Some Tattoo Studio</p>
           </div>
         </div>
       </div>
